@@ -98,13 +98,17 @@ public class StructuresExercises {
 
         System.out.println(nuevoSet);
 
-        Map<Integer,Integer> nuevoMap = new HashMap<>();
+        Map<Integer, Integer> nuevoMap = new HashMap<>();
 
-        for(Integer valor : nuevoSet) {
-            nuevoMap.put(valor,valor);
+        for (Integer valor : nuevoSet) {
+            nuevoMap.put(valor, valor);
         }
 
         System.out.println(nuevoMap);
+
+        for (Map.Entry<Integer, Integer> valores : nuevoMap.entrySet()) {
+            System.out.print(valores.getValue());
+        }
 
     }
 }
