@@ -51,7 +51,7 @@ public class LoopsExercises {
 
         int suma = 0;
 
-        int[] numeros = {5, 5, 10, 10};
+        int[] numeros = { 5, 5, 10, 10 };
 
         for (int a : numeros) {
             suma += a;
@@ -64,7 +64,6 @@ public class LoopsExercises {
             System.out.print(numeros[p] + ", ");
         }
 
-
         // 6. Usa for-each para recorrer un HashSet y un HashMap.
 
         Set<Integer> setDeEnteros = new HashSet<>();
@@ -74,37 +73,30 @@ public class LoopsExercises {
         setDeEnteros.add(15);
         setDeEnteros.add(20);
 
-        Map<Integer,String> mapaDeStrings = new HashMap();
+        Map<Integer, String> mapaDeStrings = new HashMap();
 
-        mapaDeStrings.put(1,"Salvorio");
-        mapaDeStrings.put(0,"Esperanza");
-        mapaDeStrings.put(2,"Denver");
+        mapaDeStrings.put(1, "Salvorio");
+        mapaDeStrings.put(0, "Esperanza");
+        mapaDeStrings.put(2, "Denver");
 
-        
-
-        for(Integer a: setDeEnteros) {
+        for (Integer a : setDeEnteros) {
             System.out.print(a + ", ");
         }
 
         System.out.println();
 
-        for(Map.Entry<Integer,String> entry : mapaDeStrings.entrySet()) {
+        for (Map.Entry<Integer, String> entry : mapaDeStrings.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
 
-
-
-
-
         // 7. Imprime los números del 10 al 1 (descendiente) con un bucle for.
 
-        for ( int l = 10; l > 0; l--) {
+        for (int l = 10; l > 0; l--) {
             System.out.print(l + ", ");
         }
         System.out.println();
 
         // 8. Usa continue para saltar los múltiplos de 3 del 1 al 20.
-
 
         for (int k = 1; k <= 20; k++) {
             if (k % 3 == 0) {
@@ -114,16 +106,12 @@ public class LoopsExercises {
         }
         System.out.println();
 
-
-
         // 9. Usa break para detener un bucle cuando encuentres un número negativo en un
         // array.
 
+        int[] m = { 1, 2, 3, 4, 5, -10, 5, 87, 9, 8 };
 
-
-        int[] m = {1,2,3,4,5,-10,5,87,9,8};
-
-        for(int a : m) {
+        for (int a : m) {
             if (a < 0) {
                 break;
             }
